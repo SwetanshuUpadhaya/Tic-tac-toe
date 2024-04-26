@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div>
+      <div class="description">
+        <h1>TIC TAC TOE</h1>
+        <p>
+          Tic Tac Toe is a classic game where two players take turns marking
+          spaces in a 3x3 grid. The player who succeeds in placing three of
+          their marks in a horizontal, vertical, or diagonal row wins the game.
+        </p>
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="rules">
+            <h2>How To Play:</h2>
+            <ul>
+              <li>Players take turns marking empty cells on the grid.</li>
+              <li>
+                The first player to get three of their marks in a row
+                (horizontally, vertically, or diagonally) wins the game.
+              </li>
+              <li>
+                If all cells are filled without a winner, the game is a draw.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Current Status:</h2>
+            <div class="status">
+              <p>Player(X): <span>0</span></p>
+              <p>DRAW: <span>0</span></p>
+              <p>Player(O): <span>0</span></p>
+            </div>
+            <div class="options">
+              <label for="playerOption">Play Against:</label>
+              <select id="playerOption">
+                <option value="computer">Computer</option>
+                <option value="player">Another Player</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="board" id="board">
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+        </div>
+        <div id="winningMessage" class="winning-message">
+          <div data-winning-message-text></div>
+          <button id="restartButton">Restart</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
