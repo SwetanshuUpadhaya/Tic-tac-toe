@@ -222,6 +222,8 @@ li {
 
 .winning-message.show {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 999px) {
@@ -257,6 +259,12 @@ li {
     justify-content: center;
     gap: 0;
   }
+  .winning-message {
+    font-size: 3rem;
+  }
+  .winning-message button {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -265,5 +273,11 @@ li {
   }
   body {
     margin: 20px;
+  }
+  .winning-message {
+    font-size: 2rem;
+  }
+  .winning-message button {
+    font-size: 1.5rem;
   }
 }
